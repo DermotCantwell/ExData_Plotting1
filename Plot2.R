@@ -14,7 +14,7 @@ household_power_consumption$DateTime <- as.POSIXct(paste(household_power_consump
 household_power_consumption$Global_active_power <- as.numeric(household_power_consumption$Global_active_power)
 
 #Plot #2 - output as png
-png("~/R/JohnHopkins/Exploratory Data Analysis/Project 1/Plot2.png",width=480,height=480, units="px")
+png("~/R/JohnHopkins/Exploratory Data Analysis/Project 1/Plot2.png",width=480,height=480, units="px", bg="transparent")
 par(mfrow=c(1,1))
 plot(household_power_consumption$Global_active_power~household_power_consumption$DateTime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
 

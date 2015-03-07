@@ -17,7 +17,7 @@ household_power_consumption$Sub_metering_3 <- as.numeric(household_power_consump
 
 
 #Plot #3 - output as png
-png("~/R/JohnHopkins/Exploratory Data Analysis/Project 1/Plot3.png",width=480,height=480, units="px")
+png("~/R/JohnHopkins/Exploratory Data Analysis/Project 1/Plot3.png",width=480,height=480, units="px", bg="transparent")
 par(mfrow=c(1,1))
 plot(household_power_consumption$Sub_metering_1~household_power_consumption$DateTime, type="l", ylab="Energy sub metering", xlab="")
 lines(household_power_consumption$Sub_metering_2~household_power_consumption$DateTime,col='Red')

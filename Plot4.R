@@ -20,7 +20,7 @@ household_power_consumption$Global_reactive_power <- as.numeric(household_power_
 
 
 #Plot #4 - output as png
-png("~/R/JohnHopkins/Exploratory Data Analysis/Project 1/Plot4.png",width=480,height=480, units="px")
+png("~/R/JohnHopkins/Exploratory Data Analysis/Project 1/Plot4.png",width=480,height=480, units="px", bg="transparent")
 par(mfrow=c(2,2), mar=c(4,4,2,1), oma=c(0,0,2,0))
 # Subplot 1
 plot(household_power_consumption$Global_active_power~household_power_consumption$DateTime, type="l", ylab="Global Active Power", xlab="")
